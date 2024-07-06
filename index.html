@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>LIAM HALLINAN</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            top: 0;
+            left: 0;
+            width: 99%;
+            height: 97%;
+            position: absolute;
+            display: table
+        }
+
+        p {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center
+        }
+
+        #timezone * {
+            text-decoration: none;
+        }
+        }
+    </style>
+
+    <script type="text/javascript">
+        let options = {
+            timeZone: 'Europe/London',
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+        },
+            formatter = new Intl.DateTimeFormat([], options);
+
+        setInterval(
+            () => {
+                document.querySelector("#time").innerText = formatter.format(new Date());
+            }
+            , 1000)
+    </script>
+</head>
+
+<p>
+    <font size="7"><i><b>LIAM HALLINAN</b></i></font> <br>
+    <br>
+    <img src="https://i.pinimg.com/originals/58/9a/67/589a67fcc1fab83d3a3341835443909c.png" style="width:560px;"><br>
+    <br>
+    <span id=timezone>
+        <i>
+            <a href="https://24timezones.com/world_directory/current_london_time.php">TIME IN LONDON</a> - <span id="time">0:00 PM</span> <a href="https://24timezones.com/time-zone/BST">BST</a>
+        </i>
+    </span>
+    <br><br>
+
+    <a href="https://www.linkedin.com/in/liamrhallinan/">about</a> //
+    <a href="https://www.linkedin.com/in/liamrhallinan/">tutoring</a> //
+    <a href="https://www.linkedin.com/in/liamrhallinan/">cv</a> //
+    <a href="https://www.linkedin.com/in/liamrhallinan/">contact</a>
+
+    <br>
+    <br>
+    </body>
+</html>
